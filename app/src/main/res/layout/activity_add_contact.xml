@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddContact"
+    android:background="#3ADD8B8B"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Contact Info"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name: "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/Edt_InputFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Enter First Name"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="99dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name: "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/Edt_InputLstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Enter Last Name"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="43dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textStyle="italic"
+            android:textSize="25dp"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number: "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/Edt_InputNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Enter Number"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="39dp"
+            android:inputType="number"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textStyle="italic"
+            android:textSize="25dp"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Add Contact"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="30dp"
+        android:background="#F4FF81"
+        android:id="@+id/Btn_save"
+        android:textStyle="italic"
+        android:onClick="Add_Contact" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cancel"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"
+        android:background="#FFFF8D"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Btn_cancel"
+        android:textStyle="italic" />
+
+</LinearLayout>
